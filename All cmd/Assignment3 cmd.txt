@@ -1,0 +1,9 @@
+npm init
+keep click enter until show /created package.json file
+then
+create a index.js file
+write cmd (npm install express --save)
+index.html file create
+then make a server in index.js file and 
+write cmd (node index.js)
+and then server is started

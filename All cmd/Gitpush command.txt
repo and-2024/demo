@@ -1,0 +1,132 @@
+1.git --version
+2.Create new repositary on github account
+3.Create new file for push 
+4.git init
+5.git add .
+6.git status
+7.Copy https link on github account in repositary and paste in next command
+8.git remote add origin " link "/git remote add origin https://github.com/askanadeveloper/shortcode
+9.git commit -m "msg"/git commit Smpl.html
+10.git status
+11.git push -u origin master
+
+
+
+*************************************************************************************
+
+
+ PS C:\Users\HP\OneDrive\Desktop\Creativity> git init
+Reinitialized existing Git repository in C:/Users/HP/OneDrive/Desktop/Creativity/.git/
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git add .
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Smpl.html
+
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git remote add origin https://github.com/askanadeveloper/shortcode
+error: remote origin already exists.
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git commit smpl.html
+error: pathspec 'smpl.html' did not match any file(s) known to git
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git commit Smpl.html
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+#
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@Aakanksha.(none)')
+PS C:\Users\HP\OneDrive\Desktop\Creativity>  git config --global user.email "aakankshashahane2003@gmail.com"
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git config --global user.name "askanadeveloper"
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git commit Smpl.html
+Aborting commit due to empty commit message.
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git remote add origin https://github.com/askanadeveloper/shortcode
+error: remote origin already exists.
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git commit Smpl.html
+Aborting commit due to empty commit message.
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Smpl.html
+
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/askanadeveloper/code.git'
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git push Smpl.html       
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'Smpl.html'
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git remote -v
+origin  https://github.com/askanadeveloper/code.git (fetch)
+origin  https://github.com/askanadeveloper/code.git (push)
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/askanadeveloper/code.git'
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git pull --rebase
+fatal: Updating an unborn branch with changes added to the index.
+PS C:\Users\HP\OneDrive\Desktop\Creativity> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\HP\OneDrive\Desktop\Creativity> 
+
+
+------------------------------------------------------------------------------------------------
+
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git init
+Reinitialized existing Git repository in C:/Users/HP/OneDrive/Desktop/WAD/Assignment 1/Part A/.git/
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git add .
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git remote add origin "https://github.com/askanadeveloper/newdemo.git"
+error: remote origin already exists.
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/askanadeveloper/demo.git'
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git push -u origin master
+To https://github.com/askanadeveloper/demo.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/askanadeveloper/demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git push --help
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git branch -M main
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> git push -u origin main  
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 31.61 KiB | 6.32 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/askanadeveloper/demo/pull/new/main
+remote:
+To https://github.com/askanadeveloper/demo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\HP\OneDrive\Desktop\WAD\Assignment 1\Part A> 

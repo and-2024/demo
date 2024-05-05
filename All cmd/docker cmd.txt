@@ -1,0 +1,82 @@
+on commad prompt
+
+docker -v
+docker images
+docker run --name JAVA -it -d openjdk
+docker exec -it JAVA jshell
+return to origin 
+docker ps
+/exit
+
+docker stop CONTAINER ID
+docker container rm CONTAINER ID
+
+docker ps
+
+
+
+
+sample
+------------------------------------------------------------------------------------------------------
+
+Microsoft Windows [Version 10.0.22631.3527]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>docker -v
+Docker version 26.0.0, build 2ae903e
+
+C:\Users\HP>docker images
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+openjdk      latest    71260f256d19   15 months ago   470MB
+
+C:\Users\HP>docker exec -it JAVA jshell
+Error response from daemon: No such container: JAVA
+
+What's next?
+  Try Docker Debug for seamless, persistent debugging tools in any container or image → docker debug JAVA
+  Learn more at https://docs.docker.com/go/debug-cli/
+
+C:\Users\HP>docker debug JAVA
+Log in with your Docker ID or email address.
+If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
+
+Docker Debug requires a Pro, Teams, or Business Subcription. Learn more at https://www.docker.com/pricing/
+This is a Beta feature. Learn more
+
+Press any key to open the browser for login and continue. Press ctrl+c or esc to abort.
+Exiting...
+
+C:\Users\HP>docker exec -it JAVA jshell
+Error response from daemon: No such container: JAVA
+
+What's next?
+  Try Docker Debug for seamless, persistent debugging tools in any container or image → docker debug JAVA
+  Learn more at https://docs.docker.com/go/debug-cli/
+
+C:\Users\HP>docker run --name JAVA -it -d openjdk
+4d9b0a4fb8efad17f87c9be1137090f9d764b4069e7bc37018e2f292084391ea
+
+C:\Users\HP>docker exec -it JAVA jshell
+|  Welcome to JShell -- Version 18.0.2.1
+|  For an introduction type: /help intro
+
+jshell> int a
+a ==> 0
+
+jshell> int b=9
+b ==> 9
+
+jshell> System.out.println(a-b)
+-9
+
+jshell> docker ps
+|  created variable ps, however, it cannot be referenced until class docker is declared
+
+jshell> /exit
+|  Goodbye
+
+What's next?
+  Try Docker Debug for seamless, persistent debugging tools in any container or image → docker debug JAVA
+  Learn more at https://docs.docker.com/go/debug-cli/
+
+C:\Users\HP>^A
